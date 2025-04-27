@@ -15,14 +15,14 @@ class TestClass:
         # Then - Resultado
         assert resultado == esperado
 
-    def test_quando_nome_recebe_lucas_carvalho_deve_retornar_apenas_carvalho(self):
+    def test_quando_name_recebe_lucas_carvalho_deve_retornar_apenas_carvalho(self):
         # Given
         entrada = " Lucas Carvalho "
         esperado = "Carvalho"
-        sobre_nome_teste = Funcionario(entrada, "11/11/2000", 1111)
+        sobre_name_teste = Funcionario(entrada, "11/11/2000", 1111)
 
         # When
-        resultado = sobre_nome_teste.sobrenome()
+        resultado = sobre_name_teste.sobrenome()
 
         # Then
         assert resultado == esperado
@@ -31,8 +31,8 @@ class TestClass:
         # given
         entrada_salario = 100000
         esperado = 90000
-        entrada_nome = "Paulo Bragança"
-        funcionario_teste = Funcionario(entrada_nome, "11/11/2000", entrada_salario)
+        entrada_name = "Paulo Bragança"
+        funcionario_teste = Funcionario(entrada_name, "11/11/2000", entrada_salario)
 
         # When
         funcionario_teste.decrescimo_salario()
